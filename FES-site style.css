@@ -1,0 +1,222 @@
+* {box-sizing: border-box;
+font-family: "Roboto", sans-serif;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #cafdff;
+}
+
+.logo {
+    width: 300px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    padding: 8px;
+}
+
+a {
+    color: black;
+}
+
+header {
+    background-color: #eadcff;
+    height: calc(100vh - 70px);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.sub {
+    font-size: 36px;
+}
+
+button {
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*ABOUT*/
+
+#about {
+    padding: 12px;
+    background-color: #faffdc;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.section__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__image--wrapper {
+    width: 40%;
+    padding: 0 24px;
+}
+
+img {
+    width: 100%;
+}
+
+.section__description--wrapper {
+    width: 60%;
+    padding: 24px;
+}
+
+.section__description--para {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/*DISCORD*/
+
+#discord {
+     background-color: #cefeff;
+     padding: 24px; 
+}
+
+.discord__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discord__image--wrapper {
+    width: 40%;
+    padding: 0 24px;
+}
+
+.discord__description {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* CONTACT */
+
+#contact {
+    background-color: #dce9ff;
+    padding: 24px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+
+footer {
+    background-color:  #eadcff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+}
+
+.footer-img {
+    width: 300px;
+    margin-bottom: 24px;
+}
+
+.footer-link {
+    text-decoration: underline;
+    margin: 0 12px;
+}
+
+/*for small phones, tablets, large smartphones*/
+
+
+@media (max-width: 728px) 
+{
+.row {flex-direction: column;}
+
+
+.home--description {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.sub {
+     text-align: center;
+    font-size: 28px;
+}
+
+ul {display: none;}
+
+.computer {
+    width: 70%;
+} 
+
+.section__description {
+    flex-direction: column;
+}
+
+.section__description--wrapper {
+    width: 100%;
+
+}
+
+.about__image--wrapper {
+    width: 100%;
+}
+
+.discord__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.discord__image--wrapper {
+    width: 100%;
+}
+
+.footer-img {
+    width: 100%;
+}
+}
