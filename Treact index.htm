@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./Treact style.css" />
+    <script src="./Treact-java.js"></script>
     <script src="https://kit.fontawesome.com/90a9fa0a2f.js" crossorigin="anonymous"></script>
   </head>
 
@@ -34,8 +35,34 @@
             <a class="nav-link-login">Login</a>
             <a class="nav-link-primary">Sign Up</a>
           </div>
-        </div>
+          </div>
+        
+      
+
+      <!-- HAMBURGER MENU (inside nav) -->
+       
+      <button class="hamburger-menu" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="menu-backdrop">
+         <button class="menu-x" onclick="closeMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="menu-links">
+          <a class="menu-link">About</a>
+          <a class="menu-link">Blog</a>
+          <a class="menu-link">Pricing</a>
+          <a class="menu-link">Contact Us</a>
+          <a class="menu-link">Login</a>
+          <a class="menu-link-primary">Sign Up</a>
+        </ul>
+       
+      </div>
+      
+
       </nav>
+
+
 
       <!-- HEADER -->
 

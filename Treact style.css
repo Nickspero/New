@@ -38,6 +38,11 @@ button {
     cursor: pointer;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 /* nav */
 
 nav {
@@ -120,6 +125,91 @@ nav {
     letter-spacing: 0.6px;
     color: #243e63;
 }
+
+/* hamburger menu */
+
+.menu-backdrop {
+    position: absolute;
+    visibility: hidden;
+    margin: 12px;
+    border: 2px solid #6415ff;
+    border-radius: 8px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 12;
+    z-index: 100;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.hamburger-menu {
+    display: none;
+    background: transparent;
+    font-size: 32px;
+    border: none;
+    transition: all 300ms ease;
+}
+
+.fa-bars {
+    transition: all 300ms ease;
+}
+.fa-bars:hover {
+    color: #6415ff;
+}
+.fa-xmark {
+    color: #6415ff;
+}
+
+.menu--open .menu-backdrop {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+}
+
+.menu-x {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    padding: 32px 24px;
+}
+
+.menu-link {
+    padding: 12px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu-link:hover, .menu-link-login:hover {
+    cursor: pointer;
+}
+
+.menu-link-primary {
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 9999px;
+    padding: 12px 32px;
+    background-color: #6415ff;
+    color: white;
+    transition: all 300ms ease;
+}
+
+.menu-link-primary:hover {
+    background-color: #340d81;
+    cursor: pointer;
+}
+
+
 
 /* header */
 
@@ -786,6 +876,7 @@ footer {
     padding-top: 24px;
     text-decoration: none;
     position: relative;
+    width: max-content;
 }
 
 .company-name {
@@ -854,8 +945,176 @@ footer {
 }
 
 
+/* mobiles */
 
+@media (max-width:1025px) {
 
+    h1 {
+        font-size: 32px;
+    }
+    .header-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-description-para {
+        font-size: 16px; 
+        text-align: center;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .header-customers {
+        padding: 24px 0px;
+    }
+    .header-img {
+        padding-top: 24px;
+    }
+
+    .features-subtitle {
+        text-align: center;
+        padding: 12px;
+    }
+    .feature {
+        width: 50%;
+    }
+
+    .quality-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 0px 12px 0px;
+    }
+    .quality-right {
+        width: 100%;
+    }
+
+    #steps .row {
+        width: 100%;
+    }
+    .laptop-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .laptop {
+        width: 500px;
+    }
+
+    #values .row {
+        width: 100%;
+    }
+    .values {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+    .value {
+        padding: 24px 0 0 0;
+    }
+    .value-para {
+        padding-right: 0px;
+    }
+    .value-top {
+        justify-content: center;
+    }
+    .prototype {
+        width: 100%;
+        justify-content: center;
+    }
+    .prototype-img {
+        width: 500px;
+    }
+    
+    
+    #pricing .section-subtitle {
+        width: 100%;
+        padding: 24px 0px;
+    }
+    .plan {
+        width: 100%;
+        padding: 0px 32px;
+    }
+    .plan-content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .test-left {
+        width: 100%;
+    }
+    .test-right {
+        width: 100%;
+    }
+    .love-pic {
+        padding: 0px;
+    }
+    .test-left-pic {
+        padding-bottom: 32px;
+    }
+
+    .text-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-text {
+        width: 100%;
+        padding: 0px 24px 24px 24px;
+        display: flex;
+        text-align: center;
+    }
+    .start-buttons {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .nav-row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width:576px) {
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+    .footer-column {
+        padding: 16px;
+    }
+    .footer-links-title {
+        font-size: 12px;
+    }
+    .column-link {
+        font-size: 12px;
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+    .copyright-line {
+        font-size: 12px;
+    }
+    .logo {
+        width: 20px;
+    }
+}
 
 
 
